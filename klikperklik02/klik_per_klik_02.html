@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Dit is een cursus over html" name="description"> <!-- max 160 karakters -->
+    <meta content="html, cursus, html cursus, tags, meta tags, headings" name="keywords">
+    <!-- minimaal 5 en maximaal 13 keer -->
+    <meta content="Benjamin Migom" name="author">
+    <meta content="index, follow" name="robots">
+    <meta content="Voorbeeld Webpagina" property="og:title">
+    <meta content="Dit is een cursus over html" property="og:description">
+    <meta content="https://images/test.jpg" property="og:image">
+    <meta content="Voorbeeld Webpagina" name="twitter:title">
+    <meta content="Dit is een cursus over html" property="twitter:description">
+    <meta content="https://images/test.jpg" property="twitter:image">
+    <title>HTML</title>
+</head>
+<body>
+<nav><ul>
+    <li><a href="http://www.google.be" target="_blank">Google</a></li>
+    <li><a href="http://www.bing.be" target="_blank">Bing</a></li>
+</ul></nav>
+
+<h1>CONTAINER TAGS</h1>
+<main>
+    <section id="jupilerproleague">
+        <header>
+            <h2>Jupiler Pro League</h2>
+            <a href="https://www.proleague.be/jpl" target="_blank">
+                <figure>
+                    <img src="images/jpl.png" alt="jupiler logo">
+                    <figcaption>Fig 1. Jupiler Pro League</figcaption>
+                </figure>
+            </a>
+        </header>
+        <article>
+            <header>
+                <h3>Anderlecht, 3e trainer in 3 maanden</h3>
+            </header>
+            <p>Het gaat van kwaad naar erger bij Anderlecht. Zal de 3e trainer verandering brangen!</p>
+        </article>
+        <article>
+            <header>
+                <h3>Cercle, goe bezig!</h3>
+            </header>
+            <p>In de allerlaatste minuut toch geklopt.</p>
+        </article>
+    </section>
+    <section id="proximusleague">
+        <header>
+            <h2>Proximus league</h2>
+        </header>
+        <article>
+            <header>
+                <h3>KV Mechelen wint de beker!</h3>
+            </header>
+            <p>Het is jaren geleden dat een tweedeklasser de beker won!</p>
+        </article>
+    </section>
+    <section id="formtags">
+
+        <form action="">
+            <fieldset>
+                <legend>Personalia</legend>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" required><br>
+                <input type="checkbox">test<br>
+                <input type="color"><br>
+                <input type="date"><br>
+                <input type="datetime-local"><br>
+                <input type="email"><br>
+                <input type="file"><br>
+                <input type="month"><br>
+                <input type="number"><br>
+                <input type="password"><br>
+                <input type="radio"><br>
+                <input type="range"><br>
+                <input type="search"><br>
+                <input type="tel"><br>
+                <input type="url"><br>
+                <input type="week"><br>
+                <textarea name="" id="" cols="60" rows="4"></textarea><br>
+
+                <select name="" id="mydropdown">
+                    <option value="" disabled selected="true">Kies een element</option>
+                    <option value="1">HTML5</option>
+                    <option value="2">CSS</option>
+                </select><br>
+
+                <button type="submit">Test </button>
+            </fieldset>
+        </form>
+
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 - FS Design</p>
+</footer>
+
+<script src="js"></script>
+</body>
+</html>
