@@ -17,49 +17,300 @@
     <meta content="Project prechu html leren" property="twitter:description">
     <meta content="https://images/test.jpg" property="twitter:image">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet" />
+
     <title>Prechu</title>
 </head>
 <body>
-<!--BEGIN navbar-->
-<!--END navbar-->
-<!--BEGIN hero-->
-<section id="hero" class="d-flex justify-content-end">
-    <div>
-        <h1>Lorem Ipsum is simply <span>dummy text of the printing and typesetting</span></h1>
-        <button id="btn">Sign up now</button>
+<header>
+    <!--BEGIN navbar-->
+    <nav class="d-flex ">
+        <div class="d-flex w-40">
+            <img alt="logo van prechu" src="images/logo.png">
+            <p>Prechu</p>
+        </div>
+        <ul class="d-flex justify-content-around w-60">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <!--END navbar-->
+    <!--BEGIN hero-->
+    <section class="d-flex justify-content-end" id="hero">
+        <div>
+            <h1>Lorem Ipsum is simply <span>dummy text of the printing and typesetting</span></h1>
+            <button id="btn"><i class="fa-solid fa-circle-check"></i>Sign up now</button>
+        </div>
+
+    </section>
+    <!--END hero-->
+    <!--BEGIN latest news-->
+</header>
+<main>
+    <section class="d-flex justify-content-around text-center" id="latestnews">
+        <article data-aos="fade-right" id="pencil">
+            <img alt="pencil article" src="images/pencil.png">
+            <header>
+                <h2>Contrary to popular</h2>
+            </header>
+            <p>Lorem ipsum is not simply a random text. It has roots in a piece</p>
+        </article>
+
+        <article id="pc">
+            <img alt="pc article" data-aos="fade-up" data-aos-duration="6500" src="images/pc.png">
+            <header>
+                <h2>Contrary to popular</h2>
+            </header>
+            <p>Lorem ipsum is not simply a random text. It has roots in a piece</p>
+        </article>
+
+        <article id="basket">
+            <img alt="basket article" data-aos="fade-left" src="images/basket.png">
+            <header>
+                <h2>Contrary to popular</h2>
+            </header>
+            <p>Lorem ipsum is not simply a random text. It has roots in a piece</p>
+        </article>
+    </section>
+    <!--END latest news-->
+    <!--BEGIN shopping cart-->
+    <section id="theshoppingcart">
+        <article class="d-flex">
+            <div class="text-center w-40">
+                <header>
+                    <h2>The shopping cart</h2>
+                </header>
+                <img alt="big basket" src="images/bigbasket.png">
+            </div>
+            <div class="w-60 d-flex flex-column justify-content-center" id="articletext">
+                <header>
+                    <h3>Some Bullet text here</h3>
+                </header>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    When an unknown printer took a galley of type and scrambled
+                    It to make a type specimen book. It has survived not only five centuries
+                    But also the leap into electronic typesetting,
+                    Remaining essentially unchanged. It was popularised
+                    The release of Letraset sheets containing Lorem Ipsum passages.</p>
+            </div>
+        </article>
+    </section>
+    <!--END shopping cart-->
+    <!--BEGIN extra deel-->
+    <section id="newsection">
+        <header>
+            <h2>Begin text section</h2>
+        </header>
+        <div class="d-flex">
+            <div class="flex-column w-40 ">
+                <article class="d-flex flex-column justify-content-center align-items-center">
+                    <header>
+                        <h3>Begin text A</h3>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque ea,
+                        eveniet
+                        illum
+                        inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                        repudiandae
+                        ut
+                        velit
+                        vero!</p>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center">
+                    <header>
+                        <h3>Begin text D</h3>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque ea,
+                        eveniet
+                        illum
+                        inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                        repudiandae
+                        ut
+                        velit
+                        vero!</p>
+                </article>
+            </div>
+            <div class="d-flex flex-column w-60">
+                <div class="d-flex flex-row">
+                    <article class=" w-50">
+                        <header>
+                            <h3>Begin text B</h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque ea,
+                            eveniet
+                            illum
+                            inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                            repudiandae
+                            ut
+                            velit
+                            vero!</p>
+                    </article>
+                    <article class=" w-50">
+                        <header>
+                            <h3>Begin text C</h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque ea,
+                            eveniet
+                            illum
+                            inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                            repudiandae
+                            ut velit
+                            vero!</p>
+                    </article>
+                </div>
+                <div class="d-flex ">
+                    <div class="d-flex flex-column">
+                        <article>
+                            <header>
+                                <h3>Begin text E</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque
+                                ea,
+                                eveniet
+                                illum
+                                inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                                repudiandae
+                                ut velit
+                                vero!</p>
+                        </article>
+                        <article>
+                            <header>
+                                <h3>Begin text F</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque
+                                ea,
+                                eveniet
+                                illum
+                                inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                                repudiandae
+                                ut velit
+                                vero!</p>
+                        </article>
+                        <article>
+                            <header>
+                                <h3>Begin text G</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dolore, doloremque
+                                ea,
+                                eveniet
+                                illum
+                                inventore maiores, mollitia nihil nobis numquam obcaecati odio officia quae reiciendis
+                                repudiandae
+                                ut velit
+                                vero!</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END extra deel-->
+    <!--BEGIN 4 op 3-->
+    <section id="abcsection">
+        <div class="d-flex w-100">
+            <div class="w-75">
+                <div class="d-flex flex-column ">
+                    <div>
+                        <div class="d-flex flex-row">
+                            <div class="w-75">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-row ">
+                                        <div class="w-50">
+                                            <header>
+                                                <h2>A</h2>
+                                            </header>
+                                        </div>
+                                        <div class="w-50">
+                                            <header>
+                                                <h2>B</h2>
+                                            </header>
+                                        </div>
+                                    </div>
+                                    <header>
+                                        <h2>D</h2>
+                                    </header>
+                                </div>
+                            </div>
+                            <header class="w-25">
+                                <h2>C</h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="w-25">
+                            <header>
+                                <h2>E</h2>
+                            </header>
+                        </div>
+                        <div class="w-75">
+                            <header>
+                                <h2>F</h2>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-25 justify-content-between">
+                <header>
+                    <h2>G</h2>
+                </header>
+                <header>
+                    <h2>H</h2>
+                </header>
+                <header>
+                    <h2>I</h2>
+                </header>
+            </div>
+        </div>
+    </section>
+    <!--END 4 op 3-->
+    <!--    BEGIN lightbox-->
+
+    <div class="d-flex justify-content-between align-items-center">
+        <a href="images/auto1.jpg" data-lightbox="roadtrip"><img src="images/auto1.jpg" alt="auto" width="240"></a>
+        <a href="images/auto2.jpg" data-lightbox="roadtrip"><img src="images/auto2.jpg" alt="auto" width="240"></a>
+        <a href="images/auto3.jpg" data-lightbox="roadtrip"><img src="images/auto3.jpg" alt="auto" width="240"></a>
+        <a href="images/auto4.jpg" data-lightbox="roadtrip"><img src="images/auto4.jpg" alt="auto" width="240"></a>
+        <a href="images/auto5.jpg" data-lightbox="roadtrip"><img src="images/auto5.jpg" alt="auto" width="240"></a>
     </div>
+    <!--    END lightbox-->
+    <section id="videoenmore" class="d-flex justify-content-between">
+        <div >
+            <iframe src="https://www.youtube.com/embed/JXgV1rXUoME?si=mRWByyK5zT7Rt8Ju" width="420" height="345"></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2113.88991535039!2d3.0998344832520845!3d50.94493289448612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c335bceb4d0467%3A0xa4ec8ad74209fbc5!2sSyntra%20West%20Roeselare!5e0!3m2!1snl!2sbe!4v1696337226745!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
-</section>
-<!--END hero-->
-<!--BEGIN latest news-->
-<section id="latestnews" class="d-flex justify-content-around text-center">
-    <article id="pencil">
-        <img src="images/pencil.png" alt="pencil article">
-        <header>
-            <h2>Contrary to popular</h2>
-        </header>
-        <p>Lorem ipsum is not simply a random text. It has roots in a piece</p>
-    </article>
 
-    <article id="pc">
-        <img src="images/pc.png" alt="pc article">
-        <header>
-            <h2>Contrary to popular</h2>
-        </header>
-        <p>Lorem ipsum is not simply a random text. It has roots in a piece</p>
-    </article>
+</main>
+<footer>
+    <!--BEGIN footer-->
+    <!--    <hr>  is een lijn als tag of via css onder footer -->
+    <p class="text-center">Copyright &copy; 2012-2013 www.csauthor.com</p>
+    <!--END footer-->
+</footer>
 
-    <article id="basket">
-        <img src="images/basket.png" alt="basket article">
-        <header>
-            <h2>Contrary to popular</h2>
-        </header>
-        <p>Lorem ipsum is not simply a random text. It has roots in a piece</p>
-    </article>
-</section>
-<!--END latest news-->
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'positionFromTop': 300
+    })
+</script>
 <script src="js"></script>
+
 </body>
 </html>
