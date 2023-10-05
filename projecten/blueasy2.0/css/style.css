@@ -1,0 +1,150 @@
+/*CSS VARIABELEN*/
+/*voor gans document naam maken en kleur in variabele steken*/
+:root{
+    --be-blue: #4bcaff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** GENERAL CSS SETTINGS **/
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-row{
+    flex-direction:row;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-end{
+    justify-content:flex-end;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items:center;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.text-center{
+    text-align: center;
+}
+.w-25{
+    width:25%;
+}
+.w-30{
+    width: 30%;
+}
+.w-33{
+    width: 33%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width:50%;
+}
+.w-60{
+width: 60%;
+}
+.w-66{
+    width: 66%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+
+
+/*BEGIN fonts*/
+@font-face {
+    font-family: suib;
+    src:url("../fonts/segoeuibold.woff");
+}
+@font-face {
+    font-family: suil;
+    src:url("../fonts/segoeuilight.ttf");
+}
+/*END fonts*/
+
+/*INITIALIZE BODY*/
+body{
+    width: 1920px;
+    margin: 0 auto; /*centreren scherm*/
+}
+
+/*HEADER & NAV MENU*/
+header{
+    background: url("../images/background.png") no-repeat; /*Mag deze niet herhalen*/
+}
+#headertop{
+    background: rgba(57,68,75,70%);
+    font-family: suib;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+nav{
+    width: 1175px;
+    margin: 0 auto; /*centreren*/
+}
+#brand{
+    font-size: 1.875rem;
+    color: #ffffff;
+}
+#brand span{
+    color: var(--be-blue);
+}
+ul{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none; /* onderlijnen wegdoen*/
+    color: #ffffff;
+    font-size: 14px;
+    border: 2px solid transparent;
+    padding: 10px 18px;
+    text-transform: uppercase; /*alle text in hoofdletters zetten*/
+}
+ul li a:hover{
+    padding: 10px 18px;
+    border: 2px solid var(--be-blue);
+    color: var(--be-blue);
+}
+
+/*HERO*/
+#hero{
+    font-family: suil;
+    font-size: 2.625rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 269px;
+    padding-bottom: 269px;
+}
+#hero div:first-child{
+    width: 36%;
+}
+#hero div:last-child{
+    width: 50%;
+}
+#hero div:last-child, #hero div:first-child{
+    background: rgba(57,68,75,70%);
+    margin: 5px 0px;
+    padding: 0px 12px;
+}
